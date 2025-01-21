@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        height: 70%;
+        .card{
+            width: 30%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            padding-right: 30px;
+            justify-content: center;
+            gap: 5px;
+            .cardText{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                h3{
+                    font-size: 25px;
+                }
+                button{
+                    padding: 15px 25px;
+                    background-color: #FFCE25;
+                    color: black;
+                    border: #FFCE25;
+                    border-radius: 50px;
+                    font-size: 15px;
+                }
+                span{
+                    color: #0089FE;
+                    font-size: 20px;
+                }
+            }
+        }
+        .cardOne{
+            background: url(https://preview.colorlib.com/theme/estore/assets/img/categori/cat1.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .cardTwo{
+            background: url(https://preview.colorlib.com/theme/estore/assets/img/categori/cat2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .cardThree{
+            background: url(https://preview.colorlib.com/theme/estore/assets/img/categori/cat3.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}
+@media screen and (max-width:576px) {
+    .section{
+        padding: 20px 0px;
+        height: auto;
+        .container{
+            padding: 40px 0px;
+            justify-content: center;
+            flex-direction: column;
+            height: auto;
+            .card{
+                width: 100%;
+                height: 300px;
+                margin: 15px;
+            }
+        }
+    }
+}

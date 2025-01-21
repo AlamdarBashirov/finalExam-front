@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 90%;
+        width: 90%;
+        background: url(https://preview.colorlib.com/theme/estore/assets/img/collection/latest-offer.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .text{
+            width: 90%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            .secName{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 5px;
+                h1{
+                    font-size: 45px;
+                    font-weight: 700;
+                }
+                p{
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+            }
+            .inputBox{
+                width: 50%;
+                height: 20%;
+                border: 1px solid black;
+                border-radius: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                outline: none;
+                border: none;
+                input{
+                    height: 80%;
+                    width: 90%;
+                    padding-left: 30px;
+                    font-size: 20px;
+                    border-radius: 50px;
+                    position: relative;
+                    outline: none;
+                border: none;
+                }
+                button{
+                    height: 63px;
+                    width: 170px;
+                    border-radius: 50px;
+                    font-size: 20px;
+                    position: absolute;
+                    right: 150px;
+                    border: #2577FD;
+                    background-color: #2577FD;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:576px){
+    .section{
+        .container{
+            .text{
+                flex-direction: column;
+                width: 100%;
+                position: relative;
+                .secName{
+                    width: 90%;
+                }
+                .inputBox{
+                    width: 90%;
+                    button{
+                        height: 45px;
+                        width: 100px;
+                        right: 10px;
+                        font-size: 15px;
+                    }
+                    input{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}

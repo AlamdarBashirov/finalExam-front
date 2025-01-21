@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+form{
+    padding: 40px;
+    background-color: grey;
+}
+.sort{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    input{
+        padding: 10px 20px;
+        border-radius: 50px;
+    }
+    button{
+        padding: 10px 20px;
+        border-radius: 50px;
+        color: white;
+        background-color: blue;
+    }
+}
+.table{
+    table{
+        width: 100%;
+        background-color: aqua;
+        border: 1px solid black;
+        tr{
+            width: 80%;
+            
+        }
+    }
+}
